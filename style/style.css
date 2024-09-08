@@ -1,0 +1,116 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+.attribution {
+  margin-top: 50px;
+  font-size: 11px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 320px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  box-shadow: 0px 25px 25px hsla(0, 0%, 0%, 0.0477);
+}
+
+.row {
+  padding: 40px;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 15rem;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  border-radius: 10px 10px 0 0;
+}
+
+main h1 {
+  font-size: 26px;
+  font-weight: 900;
+  color: hsl(0, 0%, 100%);
+}
+main h1 span {
+  color: hsl(277, 64%, 61%);
+}
+main p {
+  margin-top: 26px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 26px;
+}
+
+footer {
+  margin-top: 40px;
+}
+footer div h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+footer div p {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 300;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+footer div:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 376px) {
+  .container {
+    display: flex;
+    max-width: 80%;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+  }
+  .row {
+    padding: 60px;
+    text-align: left;
+  }
+  header {
+    height: 100% !important;
+    background-image: url(../images/image-header-desktop.jpg);
+    border-radius: 0px 10px 10px 0;
+  }
+  main h1 {
+    font-size: 36px;
+  }
+  footer {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  footer div:not(:first-of-type) {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
